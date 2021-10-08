@@ -18,7 +18,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "name" => "Fakhri Ahmad",
+        "email" => "193040123.fakhri@unpas.ac.id",
+        "image" => "fakhri.jpg"
+    ]);
 });
 
 Route::get('/blog', function () {
